@@ -1,6 +1,6 @@
 %define module  File-Temp
 %define name    perl-%{module}
-%define version 0.18
+%define version 0.19
 %define release %mkrel 1
 
 Name:           %{name}
@@ -10,7 +10,7 @@ Summary:        Return name and handle of a temporary file safely
 License:        GPL or Artistic
 Group:          Development/Perl
 URL:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/Alien/%{module}-%{version}.tar.gz
+Source:         http://www.cpan.org/modules/by-module/File/%{module}-%{version}.tar.gz
 Buildarch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 
