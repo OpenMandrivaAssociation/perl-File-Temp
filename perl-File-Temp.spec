@@ -12,6 +12,7 @@ Group:          Development/Perl
 URL:            http://search.cpan.org/dist/%{module}
 Source:         http://www.cpan.org/modules/by-module/File/%{module}-%{version}.tar.gz
 Buildarch:      noarch
+BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 File::Temp can be used to create and open temporary files in a safe way. There
