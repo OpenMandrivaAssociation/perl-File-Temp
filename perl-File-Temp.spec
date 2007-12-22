@@ -1,7 +1,7 @@
 %define module  File-Temp
 %define name    perl-%{module}
 %define version 0.20
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name:           %{name}
 Version:        %{version}
@@ -31,6 +31,9 @@ create a temporary directory.
 %install
 rm -rf %{buildroot}
 %makeinstall_std
+
+mv %{buildroot}%{_mandir}/man3/File::Temp.3pm \
+    %{buildroot}%{_mandir}/man3/File::Temp-%{version}.3pm
 
 %check
 %__make test
