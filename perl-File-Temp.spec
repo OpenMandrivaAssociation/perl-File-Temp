@@ -1,6 +1,6 @@
 %define module  File-Temp
 %define name    perl-%{module}
-%define version 0.19
+%define version 0.20
 %define release %mkrel 1
 
 Name:           %{name}
