@@ -7,7 +7,7 @@
 
 Name:           perl-%{upstream_name}
 Version:        %perl_convert_version %{upstream_version}
-Release:        7
+Release:        8
 
 Summary:        Return name and handle of a temporary file safely
 License:        GPL+ or Artistic
