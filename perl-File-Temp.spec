@@ -40,7 +40,7 @@ mv %{buildroot}%{_mandir}/man3/File::Temp.3pm \
 %make test
 
 %files 
-%doc ChangeLog README
+%doc  README
 %{perl_vendorlib}/File
 %{_mandir}/man3/*
 
