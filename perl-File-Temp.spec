@@ -1,5 +1,5 @@
 %define modname	File-Temp
-%define modver	0.22
+%define modver 0.2304
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(VMS::Stdio\\)'
@@ -8,11 +8,11 @@
 Summary:	Return name and handle of a temporary file safely
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	12
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:	http://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/File/%{modname}-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/File/File-Temp-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
 
@@ -43,4 +43,5 @@ mv %{buildroot}%{_mandir}/man3/File::Temp.3pm \
 %doc ChangeLog README
 %{perl_vendorlib}/File
 %{_mandir}/man3/*
+
 
