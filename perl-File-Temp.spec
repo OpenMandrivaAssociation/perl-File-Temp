@@ -13,6 +13,8 @@ Url:		http://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/File/File-Temp-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
+# For tests
+BuildRequires:	perl(Test::More)
 
 %description
 File::Temp can be used to create and open temporary files in a safe way. There
